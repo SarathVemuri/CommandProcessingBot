@@ -1,0 +1,29 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+          "type": "TextBlock",
+          "size": "Default",
+          "weight": "Bolder",
+          "text": "Please click on schedule to schedule task"
+        },
+    
+        {
+          "type": "ActionSet",
+          "actions": [
+            {
+              "type": "Action.Submit",
+              "title": "Schedule task",
+              "data": {
+                "msteams": {
+                    "type": "task/fetch"
+                },
+                "id": "schedule"
+            }
+            }
+          ]
+        }
+      ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.4"
+  }
