@@ -7,6 +7,9 @@ import { JiraStatusActionHandler } from "../cardActions/jiraStatusActionHandler"
 import { JiraUpdateActionHandler } from "../cardActions/jiraUpdateActionHandler";
 import { AckActionHandler } from "../cardActions/ackSuccessHandler";
 import { ReminderActionHandler } from "../cardActions/reminderActionHandler";
+import { JenkinsActionHandler } from "../cardActions/jenkinsActionHanlder";
+import { jenkinsBuildActionHandler } from "../cardActions/jenkinsBuildActionHandler";
+import { HolidayListActionHandler } from "../cardActions/holidaylistActionHandler";
 
 // Create the conversation bot and register the command and card action handlers for your app.
 export const workflowApp = new ConversationBot({
@@ -23,6 +26,6 @@ export const workflowApp = new ConversationBot({
   },
   cardAction: {
     enabled: true,
-    actions: [new JiraActionHandler(), new JiraStatusActionHandler(), new JiraUpdateActionHandler(), new AckActionHandler(), new ReminderActionHandler()],
+    actions: [new JiraActionHandler(), new JiraStatusActionHandler(), new JiraUpdateActionHandler(), new AckActionHandler(), new ReminderActionHandler(), new JenkinsActionHandler(), new jenkinsBuildActionHandler(), new HolidayListActionHandler()],
   },
 });

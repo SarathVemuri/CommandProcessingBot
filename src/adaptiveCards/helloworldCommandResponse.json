@@ -22,13 +22,13 @@
         },
         {
           "type": "Action.Execute",
-          "verb": "scheduleMessage",
-          "title": "Schedule a message"
+          "verb": "jenkins",
+          "title": "Jenkins Build"
         },
         {
           "type": "Action.Execute",
-          "verb": "reminder",
-          "title": "Schedule a reminder"
+          "verb": "holidaylist",
+          "title": "Fetch Holiday List"
         }
       ]
     }

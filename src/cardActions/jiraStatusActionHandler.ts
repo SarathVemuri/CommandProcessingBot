@@ -20,7 +20,7 @@ export class JiraStatusActionHandler implements TeamsFxAdaptiveCardActionHandler
      * You can send an adaptive card to respond to the card action invoke.
      */
     const cardData: CardData = {
-      title: "Here is the status of this card. BNGIN - In Development",
+      title: "Here is the status of this card. " + context.activity.value.action.title + " In Development",
       body: "",
     };
 
